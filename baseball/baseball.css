@@ -1,0 +1,190 @@
+/* 최상단 메뉴 */
+.head_top{
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  /* margin-right: 50px; */
+  min-width: 1132px;
+}
+
+/*밑줄 없애기*/
+a {
+  text-decoration: none; 
+}
+
+/* 뉴스, 연예, 날씨 */
+.doc-relate {
+  align-items: center;
+  display: flex; /*가로 정렬*/
+  list-style: none; /*불릿 제거*/
+  gap: 20px;
+}
+
+/* 타이틀 텍스트 */
+.ir_wa, .link_services, .txt_gnb{
+  color: #273552;
+}
+
+/* 카테고리 hover */
+.txt_gnb:hover{
+  color:red;
+  transition-duration: 0.3s;
+}
+
+/* 로그인 버튼 */
+.minidaum_login{
+  color: #273552;
+  align-items: center;
+  margin-left: auto; /*flexbox 환경에서 사용 시 해당 요소의 왼쪽 공간을 여백이 모두 채움*/
+  border: 3px;
+  margin-right: 50px;
+}
+
+ /* 카테고리 크기 */
+.inner_gnb{
+  min-width: 1132px;
+  margin-left: 30px;
+}
+
+/* 카테고리 flex */
+.gnb_comm{
+  align-items: center;
+  display: flex; /*가로 정렬*/
+  list-style: none; /*불릿 제거*/
+  gap: 20px;
+  padding: 20px;
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+/* 년도 */
+#calendar_year {
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1100px;
+}
+
+/* 기록표 전체 */
+.box_record{
+  /* position: relative; */
+  min-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  margin-top: -30px;
+}
+
+/* 종합 순위 */
+.tit_record{
+  margin-bottom: 10px;
+}
+
+/* 기록표 값 */
+.tbl_record{
+  width: 100%;
+  table-layout: fixed; /* colgroup의 규칙을 따르게 함 */
+  overflow: hidden;
+  /* font-size: 8px; */
+}
+
+/* tbody 내부 높이 지정 */
+.tbl_record td{
+  height: 44px;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* 팀 내부 데이터 left */
+.td_name {
+  text-align: left !important;
+}
+
+/* colgroup 지정 */
+.colgroup{
+  display: table-column-group;
+  unicode-bidi: isolate;
+}
+.col1 { width: 40px; }
+.col2 { width: auto; }
+.col_data { width: 70px; }
+
+/* 로고 사진 크기 */
+.team-logo{
+  width: 25px;
+  vertical-align: middle;
+}
+
+.tbl_record, .btn_sort{
+  height: 80px;
+}
+
+/* 팀 textalign */
+.th_name{
+  text-align: left;
+}
+
+table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  unicode-bidi: isolate;
+  border-spacing: 2px;
+  border-color: gray;
+}
+
+.wrap_table {
+  position: relative;
+  border-top: 1px solid #494949;
+  margin-bottom: 22px;
+  box-sizing: border-box;
+}
+
+/* 기록 요소 높이 지정 */
+.tbl_record thead th {
+  background-color: #f7f7f7;
+  height: 45px;
+  border-bottom: 1px solid #ededed;
+}
+
+.box_record .inner_table {
+  overflow-y: auto;
+  border-bottom: 1px solid #eaeaea;
+  background-color: #fff;
+}
+
+/* 기록표 제목 행 text */
+.tbl_record th {
+  font-weight: 400;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+/* 순위 bold */
+.tbl_record td:nth-child(1) {
+  font-weight: bold;  
+}
+
+/* 승률 배경 */
+.tbl_record th:nth-child(7) {
+  background-color: #e8f2fe; 
+  color: #2b6ecd;
+}
+.tbl_record td:nth-child(7) {
+  background-color: #f0f7ff;
+  font-weight: bold;  
+}
+
+.tbl_record tbody tr:nth-child(even){
+  background-color: #f7f7f7;
+}
+
+.baseball-area{
+  padding: 25px;
+  display: none;
+}
+.baseball-area.active{
+  display: block;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="baseball.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- 최상단 메뉴 -->
+  <div class="head_top">
+    <h1 class="doc-title">
+      <a href="http://daum.net" class="link_daum">
+        <svg focusable="false" aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 5.83C13.8556 5.83 16.1656 8.316 16.0556 11.1958C15.9522 13.9348 13.6158 16.17 10.8746 16.17H7.2578C7.0158 16.17 6.8178 15.972 6.8178 15.73V6.27C6.8178 6.028 7.0158 5.83 7.2578 5.83H10.9978M11 0H2.2C1.4718 0 0.880005 0.5918 0.880005 1.32V20.68C0.880005 21.4082 1.4718 22 2.2 22H11C17.0742 22 22 17.0742 22 11C22 4.9258 17.0742 0 11 0Z" fill="#273552"></path>
+        </svg>
+      </a>
+      <a href="https://sports.daum.net/" id="kakaoServiceLogo">
+        <span class="ir_wa">스포츠</span>
+      </a>
+    </h1>
+
+    <ul class="doc-relate">
+      <li><a href="https://news.daum.net/" class="link_services">뉴스</a></li>
+      <li><a href="https://entertain.daum.net/" class="link_services">연예</a></li>
+      <li><a href="https://weather.daum.net/?location-regionId=AB20020600&weather-cp=kweather" class="link_services">날씨</a></li>
+    </ul>
+
+    <a href="https://logins.daum.net/accounts/loginform.do?url=https%3A%2F%2Fsports.daum.net%2Frecord%2Fkbo" target="_top" id="btnMinidaumLogin" class="minidaum_login minidaum_tiara_click" data-tiara-layer="gnb minidaum login" data-tiara-action-name="미니다음_로고">로그인</a>
+  </div>
+
+  <!-- 카테고리 선택 메뉴 -->
+  <div class="inner_gnb">
+    <ul class="gnb_comm">
+      <li><a href="#"><span class="txt_gnb">홈</span></a></li>
+      <li><a href="#"><span class="txt_gnb">축구</span></a></li>
+      <li><a href="#"><span class="txt_gnb">해외축구</span></a></li>
+      <li id="menu_baseball"><a href="#"><span class="txt_gnb">야구</span></a></li>
+      <li><a href="#"><span class="txt_gnb">해외야구</span></a></li>
+      <li><a href="#"><span class="txt_gnb">골프</span></a></li>
+      <li><a href="#"><span class="txt_gnb">농구</span></a></li>
+      <li><a href="#"><span class="txt_gnb">배구</span></a></li>
+      <li><a href="#"><span class="txt_gnb">일반</span></a></li>
+      <li><a href="#"><span class="txt_gnb">핸드볼</span></a></li>
+      <li><a href="#"><span class="txt_gnb">e-스포츠</span></a></li>
+    </ul>
+  </div>
+
+  <!-- 야구 출력 부분 -->
+   <div class="baseball-area">
+
+    <!-- 년도 -->
+    <div id="calendar_year">
+      <h2>2023</h2>
+    </div>
+
+    <!-- 기록표 -->
+    <div id="recordList" class="box_record rebord_kbo">
+
+      <h4 class="tit_record">종합 순위</h4>
+        <div class="wrap_table">
+          <div class="inner_table">
+            <table class="tbl_record">
+              <colgroup>
+
+                <!-- 순위 -->
+                <col class="col1">
+
+                <!-- 팀 -->
+                <col class="col2">
+
+                <!-- 나머지 -->
+                <col class="col_data" span="7">
+              </colgroup>
+
+              <!-- thead 값 -->
+              <thead>
+                <tr>
+                  <th scope="col" class="th_rank">
+                    <span class="txt_col">순위</span>
+                  </th>
+                  <th scope="col" class="th_name">
+                    <span class="txt_col">팀</span>
+                  </th>
+                  <th scope="col" data-sort="game">
+                    <span class="btn_sort">경기</span>
+                  </th>
+                  <th scope="col" data-sort="win">
+                    <span class="btn_sort">승</span>
+                  </th>
+                  <th scope="col" data-sort="draw">
+                    <span class="btn_sort">무</span>
+                  </th>
+                  <th scope="col" data-sort="loss">
+                    <span class="btn_sort">패</span>
+                  </th>
+                  <th scope="col" data-sort="rank">
+                    <span class="btn_sort">승률</span>
+                  </th>
+                  <th scope="col" data-sort="gb">
+                    <span class="btn_sort">게임차</span>
+                  </th>
+                  <th scope="col" data-sort="streak">
+                    <span class="btn_sort">연속</span>
+                  </th>
+                </tr>
+              </thead>
+
+              <!-- tbody -->
+               <tbody id="baseball-body">
+               </tbody>
+            </table>
+          </div>
+        </div>
+      </h4>
+    </div>
+   </div>
+   <script src="baseball.js"></script>
+</body>
+</html>
