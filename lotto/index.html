@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="lotto.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+  <script>
+    function getLotto(){
+      // 랜덤
+      // 6개 뽑아야 하는데, 문제 중복 숫자를 뽑으면 안된다.
+
+      var numbers = []
+
+      while(numbers.length < 6){
+        var n = Math.floor(Math.random() * 45 + 1);
+        console.log(n);
+        if (numbers.includes(n)){
+          continue;
+        }
+        numbers.push(n);
+      }
+
+      // 오름차순 정렬
+      numbers.sort((a, b) => a - b);
+      console.log(numbers);
+
+      const ballHTML = numbers.map( n => {
+        let colorClass = "";
+        if (n <= 10) colorClass = "ball-yellow";
+        else if (n <= 20) colorClass = "ball-blue";
+        else if (n <= 30) colorClass = "ball-red";
+        else if (n <= 40) colorClass = "ball-gray";
+        else colorClass = "ball-green";
+
+        return `<span class="ball ${colorClass}">${n}</span>`;
+      }).join("");
+
+      // 로직
+      document.getElementById("lottoNumber").innerHTML = ballHTML;
+    }
+  </script>
+</head>
+<body>
+  <img src="logo.svg" style="width: 80px;">
+  <div class="webtitle">
+    <h1 class="black-han-sans-regular">로또 번호 뽑기</h1>
+  </div>
+  <div class="container">
+    <h2 id="lottoNumber"></h2>
+  </div>
+  <div class="button">
+    <!-- <input class="button-style" onclick="getLotto()" type="button" value="로또번호"> -->
+    <button class="button-style" onclick="getLotto()">로또 번호</button>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,377 @@
+/* body 전체 적용 */
+body {
+  margin: 0;
+  min-width: 1000px;
+  overflow-x: auto;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+}
+
+/* 소제목 폰트 */
+.nanum-myeongjo-regular {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* mbti 폰트 */
+.jua-regular {
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Thank You 폰트 */
+.unna-regular {
+  font-family: "Unna", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* --------------- 1페이지 --------------- */
+/* 상단 물결 */
+.head{
+  height: 7vh;
+  background: #cbcec7;
+  clip-path: ellipse(35% 120% at 0% 0%);
+  overflow-x: auto;
+}
+
+/* 상단 물결 디테일 */
+.head-side{
+  height: 7vh;
+  min-height: 50px;
+  background-color: #cbcec7;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.head-side::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  clip-path: ellipse(108% 150% at 100% 100%);
+}
+
+/* 1페이지 본문 영역 */
+.introduce {
+  position: relative;
+  margin-top: 70px;
+  margin-left: 50px;
+  margin-bottom: -10vh;
+  z-index: 2; 
+}
+
+/* 1페이지 text 속성 */
+.title{
+  text-align: left;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 0.4em;
+  margin-top: 0px;
+}
+
+/* 1페이지 text 하이라이트 */
+.mark{
+  font-weight: bold;
+  color:#cbcec7;
+}
+
+/* 1페이지 하단 물결 1단 */
+.foot1-side {
+  height: 16vh;
+  background-color: #f5f1e6;
+  position: relative;
+}
+
+/* 1페이지 하단 물결 1단 디테일 */
+.foot1-side::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  clip-path: ellipse(100% 140% at 0% 0%); 
+}
+
+/* 1페이지 하단 물결 2단*/
+.foot1 {
+  height: 15vh;
+  background-color: #f5f1e6;
+  clip-path: ellipse(47% 130% at 100% 100%);
+}
+
+
+/* --------------- 2 페이지 --------------- */
+/* 하단 물결 */
+.foot2{
+  height: 7vh;
+  background-color: #f5f1e6;
+  clip-path: ellipse(35% 120% at 100% 100%);
+  overflow-x: auto;
+}
+
+/* 하단 물결 디테일 */
+.foot2-side{
+  height: 7vh;
+  background-color: #f5f1e6;
+  position: relative;
+}
+.foot2-side::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  clip-path: ellipse(108% 150% at 0% 0%);
+}
+
+/* 2페이지 본문 영역 */
+.content-area{
+  min-height: 10vh;
+}
+
+/* 2페이지 소제목 속성 */
+.content-text{
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+  margin-top: -6vh;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 20px;
+}
+
+/* 구분선 */
+.div-line{
+  border: solid 1px;
+  border-color: #d5d8d1;;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* 2페이지 요소 영역 */
+.cat-area{
+  padding-top: 55px;
+  display: flex;
+  flex-direction: row;
+  min-width: 1000px;
+  margin-bottom: 0px;
+  position: relative;
+  z-index: 10;
+}
+
+/* 2페이지 요소 1 - 2001년생 */
+.birth{
+  text-align: right;
+  padding-top: 30px;
+  width: 22%;
+  font-size: 30px;
+}
+
+/* 2페이지 요소 2 - 네글자 */
+.four{
+  text-align: center;
+  padding-top: 145px;
+  width: 22%;
+  font-size: 30px;
+}
+
+/* 2페이지 요소 3 - 도은?이도은? */
+.doeun{
+  text-align: center;
+  padding-top: 155px;
+  width: 22%;
+  font-size: 30px;
+}
+
+/* 2페이지 요소 4 - ISTP */
+.mbti{
+  padding-top: 20px;
+  width: 22%;
+  font-size: 30px;
+}
+
+/* --------------- 3 페이지 --------------- */
+/* 3페이지 소제목 속성 */
+.content-text2{
+  text-align: left;
+  font-weight: bold;
+  font-size: 35px;
+  margin-top: -5vh;
+  margin-bottom: 20px;
+  padding-left: 50px;
+  position: relative;
+  z-index: 10;
+}
+
+/* MBTI 표 속성 */
+table {
+  table-layout: fixed;
+  width: 65%;
+  height: 100%;
+  border-collapse: collapse;
+  margin-left:auto; 
+  margin-right:auto;
+  margin-top: 10px;
+  margin-bottom: -8vh;
+  position: relative;
+  z-index: 10;
+}
+
+/* MBTI 표 요소 속성 */
+td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 19px;
+  border: 2px solid #ddd;
+  text-align: center;
+}
+.td-mark{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #5d863f;
+  font-weight: bold;
+  font-size: 34px;
+}
+
+/* --------------- 4 페이지 --------------- */
+/* 4페이지 본문 영역 */
+.mbti-area{
+  min-height: 10vh;
+  position: relative;
+  display: block;
+}
+
+/* MBTI 표 위 stamp */
+.match-stamp {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -70%) rotate(-25deg);
+  color: #ffffff;
+  font-size: 9rem;
+  font-weight: 900;
+  background-color: rgba(255, 0, 0, 0.6);
+  white-space: nowrap;
+  z-index: 10; 
+  pointer-events: none;
+}
+
+/* --------------- 5 페이지 --------------- */
+/* 5페이지 본문 내 정렬 영역 */
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px; 
+  position: relative;
+  z-index: 10;
+  margin-bottom: -7vh;
+}
+
+/* 5페이지 글씨 영역 */
+.history-area {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px; 
+  padding-top: 60px; 
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-bottom: -3vh;
+  flex:1
+}
+
+/* 5페이지 글씨 개별 항목 */
+.history-item {
+  padding-left: 30px;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+}
+.date {
+  width: 160px;
+  font-size: 1rem;
+}
+.details p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* 5페이지 이미지 영역 */
+.image-area {
+  flex: 1; 
+  position: relative; 
+  min-height: 300px; 
+}
+
+/* 5페이지 이미지 개별 속성 */
+.img-ai { position: absolute; top: 0%; left: 5%; width: 180px; }
+.img-dance { position: absolute; top: 0%; right: 10%; width: 160px; }
+.img-student { position: absolute;bottom: 10%; left: 30%; width: 200px; }
+.img-cat{width:150px; padding-top: 30px}
+
+/* --------------- 6 페이지 --------------- */
+/* 6페이지 본문 영역 */
+.qna-area{
+  min-height: 10vh;
+  position: relative;
+  z-index: 10;
+  margin-bottom: -7vh;
+}
+
+/* 6페이지 이미지 속성 */
+.img-qna{
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 50px;
+}
+
+/* --------------- 7 페이지 --------------- */
+/* 7 페이지 상단 물결 */
+.head3 {
+  height: 17vh;
+  background: #f5f1e6;
+  --mask:
+    radial-gradient(178.89px at 50% calc(100% - 240px),#000 99%,#0000 101%) calc(50% - 160px) 0/320px 100%,
+    radial-gradient(178.89px at 50% calc(100% + 160px),#0000 99%,#000 101%) 50% calc(100% - 80px)/320px 100% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+
+/* 7 페이지 하단 물결 */
+.foot3 {
+  height: 17vh;
+  background-color: #e6e1db;
+  --mask:
+    radial-gradient(178.89px at 50% 240px,#000 99%,#0000 101%) calc(50% - 160px) 0/320px 100%,
+    radial-gradient(178.89px at 50% -160px,#0000 99%,#000 101%) 50% 80px/320px 100% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+
+/* 7 페이지 본문 영역 */
+.end-area{
+  display: flex;
+  justify-content: center;
+}
+
+/* 7페이지 text 속성 */
+.end-text{
+  text-align: center;
+  font-size: 80px;
+}
+

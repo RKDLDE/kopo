@@ -1,0 +1,78 @@
+.webtitle{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /* max-height: 10vh; */
+}
+.container{
+  min-height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+#lottoNumber{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+
+}
+.button{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.button-style{
+  color: #bdbdbd;
+  font-weight: 500;
+  padding: 13px 28px 13px 28px;
+  text-align: center;
+  font-size: 20px;
+  border: solid 0px transparent;
+  border-radius: 30px;
+  box-shadow: 0px 0px 15px #dddddd;
+  background-color: #ffffff;
+}
+.button-style:hover{
+  color: #ffffff;
+  background-color: #d8314f;
+  transition-duration: 0.3s;
+  font-weight: 500;
+  padding: 13px 28px 13px 28px;
+  text-align: center;
+  font-size: 20px;
+  border: solid 0px transparent;
+  border-radius: 30px;
+  box-shadow: inset 0px 0px 15px #14141459;
+}
+
+.ball {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: popIn 0.3s ease-out;
+}
+
+.ball-yellow { background-color: #e08f00; } 
+.ball-blue   { background-color: #0063cc; } 
+.ball-red    { background-color: #d8314f; }
+.ball-gray   { background-color: #6e7382; } 
+.ball-green  { background-color: #2c9e44; }
+
+@keyframes popIn {
+  from { transform: scale(0); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+.black-han-sans-regular {
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
